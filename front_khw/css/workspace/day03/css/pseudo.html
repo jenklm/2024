@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    /* : 가상요소 선택자  */
+    a:link{
+      color:red;
+    }
+
+    a:visited{
+      color:green;
+    }
+
+    /* a:hover{
+      background-color:yellow;
+    } */
+
+    a:active{
+      background-color:green;
+    }
+
+    /* :: 가상요소 */
+
+    /* a::before{
+      content: "before 가상태그";
+    } */
+
+    a::after{
+      content: "after 가상태그";
+      width: 100px;
+      height: 100px;
+      background-color: green;
+    }
+
+
+    
+  </style>
+</head>
+<body>
+
+
+
+  <a href="##">방문한 적이 없는 링크</a>
+  <a href="#">방문한 적이 있는 링크</a>
+
+
+
+
+  
+</body>
+</html>

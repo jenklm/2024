@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    /* id가 container인 자손 태그들의 폰트 컬러를 purple로 바꾸기
+    id가 box인 자손 span 태그들의 폰트 컬러를 blue로 변경하기 */
+    
+    
+
+    div{
+      border: solid 1px #333;
+      width: 500px;
+    }
+
+    span{
+      display: block;
+      width: 300px;
+    }
+
+    #container >div >span{
+        color:purple;
+
+    }
+
+    #container>div>a{
+        color:purple;
+    }
+
+    #box> div >span {
+        color:blue;
+    }
+    #box> div > a {
+        color:blue;
+    }
+
+
+  </style>
+</head>
+<body>
+  
+  <div id="container">
+    조상 div태그
+    <span>부모 span태그</span>
+    <div>부모 p태그
+      <span>자손 span태그</span>
+      <a>자손 a태그</a>
+    </div>
+  </div>
+
+  <br /><br />
+
+  <div id="box">
+    조상 div태그
+    <span>부모 span태그</span>
+    <div>부모 p태그
+      <span>자손 span태그</span>
+      <a>자손 a태그</a>
+    </div>
+  </div>
+
+</body>
+</html>

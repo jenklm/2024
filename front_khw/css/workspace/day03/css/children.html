@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div{
+            width:100px; height:100px; background-color:green; margin:4px;
+        }
+
+        p>div{
+            font-size:20px;
+        }
+/* 
+        div>p>span{
+            color:red;
+        } */
+
+        div span{
+            color: purple;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div>컨테이너1</div>
+    <p> 기본 p 태크 </p>
+        <div> 부모태그 
+            <p> 컨테이너2 </p>
+            <p> 컨테이너3 
+                <span> 컨테이너4 </span>
+            </p>
+        </div>
+
+</body>
+</html>
